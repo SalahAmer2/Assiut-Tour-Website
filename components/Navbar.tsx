@@ -5,9 +5,12 @@ export default function Navbar() {
         <div className="text-xl font-bold">Travel2Assiut</div>
         <div className="space-x-4">
           <a href="/" className="hover:text-blue-600">Home</a>
-          <a href="/about" className="hover:text-blue-600">About</a>
+          <a href="/about-assiut" className="hover:text-blue-600">About Assiut</a>
+          <a href="/who-we-are" className="hover:text-blue-600">Who We Are</a>
           <a href="/tours" className="hover:text-blue-600">Tours</a>
-          <a href="/contact" className="hover:text-blue-600">Contact</a>
+          <a href="/transfers" className="hover:text-blue-600">Transfers</a>
+          <a href="/events-page" className="hover:text-blue-600">Events</a>
+          <a href="/contact-us" className="hover:text-blue-600">Contact Us</a>
         </div>
       </div>
     </nav>

@@ -4,8 +4,8 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 export const metadata = {
-  title: 'Travel2Egypt Clone',
-  description: 'Explore Egypt with our curated tours and travel guides.',
+  title: 'Travel2Assiut',
+  description: 'Explore Assiut with our curated tours and travel guides.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

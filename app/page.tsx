@@ -9,7 +9,13 @@ export default function Home() {
       {/* <div className="flex items-center justify-center min-h-screen bg-blue-100">
         <h1 className="text-4xl font-bold text-blue-800">Tailwind is working!</h1>
       </div> */}
-      <Hero />
+      <Hero
+        title="Discover the Heart of Upper Egypt"
+        subtitle="Explore the Ancient Wonders of Assiut."
+        image="/images/assiut-hero.jpg"
+        buttonType="link"
+        buttonHref="/attractions"
+      />
       <section className="py-12 px-6 bg-gray-100">
         {/* <div className="w-[500px] h-[500px] bg-black"/>
         <div style={{ width: '500px', height: '500px', backgroundColor: 'black' }} /> */}
