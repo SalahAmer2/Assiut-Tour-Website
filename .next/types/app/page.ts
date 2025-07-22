@@ -1,4 +1,4 @@
-// File: D:\travel2egypt-clone (1)\app\page.tsx
+// File: D:\Assiut-Tour-Website\app\page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
