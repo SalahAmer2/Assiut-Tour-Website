@@ -21,7 +21,7 @@ export default function TransferHero() {
         className="object-cover"
         priority
         quality={100}
-        sizes="100vw" //THIS IS IMPORTANT FOR RESPONSIVE IMAGES and letting it work on screens WIDER than 1920px
+        sizes="100vw" //THIS LETS IT WORK ON SCREENS WIDER THAN 1920px and IS IMPORTANT FOR RESPONSIVE IMAGES
         />
 
 
