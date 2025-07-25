@@ -109,7 +109,10 @@ export default function TransfersPage() {
           />
           {isLoaded && (
             <GoogleMap
-              onLoad={(map) => (mapRef.current = map)}
+            //   onLoad={(map) => (mapRef.current = map)}
+                onLoad={(map) => {
+                mapRef.current = map;
+                }}
               onClick={handleMapClick}
               mapContainerStyle={containerStyle}
               center={center}
