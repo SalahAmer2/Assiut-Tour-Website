@@ -16,10 +16,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/about-assiut/page.js"
     ],
-    "/who-we-are/page": [
+    "/tours/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/who-we-are/page.js"
+      "static/chunks/app/tours/page.js"
     ]
   }
 }
