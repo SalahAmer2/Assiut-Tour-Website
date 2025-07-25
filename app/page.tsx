@@ -15,7 +15,7 @@ export default function Home() {
         subtitle="Explore the Ancient Wonders of Assiut."
         image="/images/assiut-hero.jpg"
         buttonType="link"
-        buttonHref="/attractions"
+        buttonHref="/tours"
       />
       <section className="py-12 px-6 bg-gray-100">
         {/* <div className="w-[500px] h-[500px] bg-black"/>
