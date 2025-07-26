@@ -25,6 +25,26 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
+    ],
+    "/tours/muqattam/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/tours/muqattam/page.js"
+    ],
+    "/tours/sayyidna-omar/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/tours/sayyidna-omar/page.js"
+    ],
+    "/tours/national-museum/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/tours/national-museum/page.js"
+    ],
+    "/tours/wadi-el-natrun/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/tours/wadi-el-natrun/page.js"
     ]
   }
 }

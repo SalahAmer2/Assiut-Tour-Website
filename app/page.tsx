@@ -27,6 +27,30 @@ export default function Home() {
               title="Al-Muqattam Mountain"
               description="Ancient site with scenic views."
               imageSrc="/images/mokkatom mountain.jpeg"
+              link="/tours/muqattam"
+            />
+            <TourCard
+              title="Shrine of Sayyidna Omar ibn Al-Khattab"
+              description="Spiritual and cultural significance."
+              imageSrc="/images/Shrine of Sayyidna Omar ibn Al-Khattab.jpeg"
+              link="/tours/sayyidna-omar"
+            />
+            <TourCard
+              title="Assiut National Museum"
+              description="Artifacts and history."
+              imageSrc="/images/Assiut National Museum.jpeg"
+              link="/tours/national-museum"
+            />
+            <TourCard
+              title="Wadi El-Natrun"
+              description="Nature and desert exploration."
+              imageSrc="/images/Wadi El-Natrun.jpeg"
+              link="/tours/wadi-el-natrun"
+            />
+            {/* <TourCard
+              title="Al-Muqattam Mountain"
+              description="Ancient site with scenic views."
+              imageSrc="/images/mokkatom mountain.jpeg"
             />
             <TourCard
               title="Shrine of Sayyidna Omar ibn Al-Khattab"
@@ -42,7 +66,7 @@ export default function Home() {
               title="Wadi El-Natrun"
               description="Nature and desert exploration."
               imageSrc="/images/Wadi El-Natrun.jpeg"
-            />
+            /> */}
           </div>
         </section>
         {/* <h2 className="text-3xl font-bold text-center mb-8">Top Destinations</h2>
