@@ -107,7 +107,7 @@ export default function TransfersPage() {
               }
             }}
           />
-          {isLoaded && (
+          {/* {isLoaded && (
             <GoogleMap
             //   onLoad={(map) => (mapRef.current = map)}
                 onLoad={(map) => {
@@ -122,10 +122,10 @@ export default function TransfersPage() {
                 <Marker position={{ lat: selectedLocation.lat, lng: selectedLocation.lng }} />
               )}
             </GoogleMap>
-          )}
+          )} */}
         </div>
 
-        {selectedLocation && (
+        {/* {selectedLocation && (
           <p className="text-lg text-center text-gray-700">
             Book a transfer from →{' '}
             <Link
@@ -135,7 +135,11 @@ export default function TransfersPage() {
               {selectedLocation.name}
             </Link>
           </p>
-        )}
+        )} */}
+        {/* Placeholder text below till we get the google maps working with a debit or credit card */}
+        <p className="text-lg text-center text-gray-700">
+            Book a transfer from →    
+        </p>
       </section>
     </div>
   );
