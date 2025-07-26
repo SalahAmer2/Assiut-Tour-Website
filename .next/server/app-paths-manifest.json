@@ -1,7 +1,7 @@
 {
   "/page": "app/page.js",
-  "/contact-us/page": "app/contact-us/page.js",
   "/transfers/page": "app/transfers/page.js",
+  "/who-we-are/page": "app/who-we-are/page.js",
   "/tours/national-museum/page": "app/tours/national-museum/page.js",
   "/tours/wadi-el-natrun/page": "app/tours/wadi-el-natrun/page.js"
 }
