@@ -94,7 +94,8 @@ export default function ToursPage() {
                 {tour.description}
               </p>
               <Link
-                href="/bookings"
+                //href="/bookings" //in the future use this to link to a booking page
+                href="/contact-us"
                 className="inline-block text-yellow-600 font-semibold hover:underline hover:text-yellow-700 transition"
               >
                 Book Tour →
