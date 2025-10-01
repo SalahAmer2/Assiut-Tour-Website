@@ -54,7 +54,8 @@ export default function WadiElNatrunPage() {
           Beyond its religious importance, Wadi El-Natrun offers a peaceful desert escape with palm groves, salt lakes, and a quiet that speaks to the soul. It’s a perfect blend of history, faith, and nature—a must-visit for anyone exploring Assiut and its surroundings.
         </p>
         <a
-          href="/contact-us"
+          // href="/contact-us"
+          href="book-tour/wadi-el-natrun"
           className="inline-block text-nile-blue font-semibold underline hover:text-blue-800 transition duration-300"
         >
           Book Tour →

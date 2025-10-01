@@ -17,24 +17,28 @@ export default function ToursPage() {
       description:
         'An ancient mountain offering breathtaking views over Cairo and a place of historical significance. Perfect for those who enjoy scenic panoramas and stories etched into stone.',
       imageSrc: '/images/mokkatom mountain.jpeg',
+      slug: 'al-muqattam'
     },
     {
       title: 'Shrine of Sayyidna Omar ibn Al-Khattab',
       description:
         'This revered shrine is a site of spiritual reflection and cultural heritage, attracting visitors from across Egypt. A peaceful, meaningful stop for anyone exploring Islamic history.',
       imageSrc: '/images/Shrine of Sayyidna Omar ibn Al-Khattab.jpeg',
+      slug: 'sayyidna-omar'
     },
     {
       title: 'Assiut National Museum',
       description:
         'Dive into the rich tapestry of Assiut’s history, from Pharaonic treasures to local folklore. The museum offers an engaging journey through time, with expertly curated exhibits.',
       imageSrc: '/images/Assiut National Museum.jpeg',
+      slug: 'national-museum'
     },
     {
       title: 'Wadi El-Natrun',
       description:
         'An oasis of natural beauty and historical monasticism, Wadi El-Natrun invites you to explore ancient monasteries surrounded by desert landscapes and unique wildlife.',
       imageSrc: '/images/Wadi El-Natrun.jpeg',
+      slug: 'wadi-el-natrun'
     },
   ];
 
@@ -95,7 +99,8 @@ export default function ToursPage() {
               </p>
               <Link
                 //href="/bookings" //in the future use this to link to a booking page
-                href="/contact-us"
+                // href="/contact-us"
+                href={`book-tour/${tour.slug}`}
                 className="inline-block text-yellow-600 font-semibold hover:underline hover:text-yellow-700 transition"
               >
                 Book Tour →

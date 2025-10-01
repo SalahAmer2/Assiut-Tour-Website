@@ -49,7 +49,10 @@ export default function MuqattamPage() {
           Whether you're exploring its caves, marveling at the monastic sites, or simply enjoying the sunset from the
           heights, Al-Muqattam promises a memorable experience deeply rooted in Egypt’s spiritual and historical past.
         </p>
-        <a href="/contact-us" className="text-nile-blue underline font-semibold hover:text-blue-900">
+        <a 
+        // href="/contact-us"
+        href="/book-tour/al-muqattam" 
+        className="text-nile-blue underline font-semibold hover:text-blue-900">
           Book Tour →
         </a>
       </section>

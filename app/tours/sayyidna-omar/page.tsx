@@ -54,7 +54,8 @@ export default function SayyidnaOmarPage() {
           Visitors often describe their time at the shrine as peaceful and enlightening. Whether you're exploring the beautifully preserved interiors or standing quietly in prayer, this destination is sure to leave a lasting impression on your journey through Egypt.
         </p>
         <a
-          href="/contact-us"
+          // href="/contact-us"
+          href="book-tour/sayyidna-omar"
           className="inline-block text-nile-blue font-semibold underline hover:text-blue-800 transition duration-300"
         >
           Book Tour →

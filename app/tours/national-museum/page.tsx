@@ -54,7 +54,8 @@ export default function NationalMuseumPage() {
           The museum not only preserves the region’s deep historical roots but also inspires curiosity and appreciation for Egypt’s diverse cultural tapestry. Whether you're a student, traveler, or history enthusiast, this museum is an unforgettable stop on your tour.
         </p>
         <a
-          href="/contact-us"
+          // href="/contact-us"
+          href="book-tour/national-museum"
           className="inline-block text-nile-blue font-semibold underline hover:text-blue-800 transition duration-300"
         >
           Book Tour →
