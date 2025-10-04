@@ -2,6 +2,8 @@
 
 import { useSearchParams } from "next/navigation";
 
+export const dynamic = "force-dynamic";
+
 export default function SuccessPage() {
   const searchParams = useSearchParams();
   const bookingRef = searchParams.get("ref");

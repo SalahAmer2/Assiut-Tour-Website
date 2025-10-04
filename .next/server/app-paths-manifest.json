@@ -1,9 +1,9 @@
 {
   "/api/create-checkout-session/route": "app/api/create-checkout-session/route.js",
-  "/api/webhook/route": "app/api/webhook/route.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/tours/page": "app/tours/page.js",
+  "/api/webhook/route": "app/api/webhook/route.js",
   "/page": "app/page.js",
+  "/tours/page": "app/tours/page.js",
   "/book-tour/[slug]/page": "app/book-tour/[slug]/page.js",
   "/success/page": "app/success/page.js"
 }
