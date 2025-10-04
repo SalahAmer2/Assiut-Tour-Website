@@ -1,7 +1,9 @@
 {
+  "/api/create-checkout-session/route": "app/api/create-checkout-session/route.js",
+  "/api/webhook/route": "app/api/webhook/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/tours/page": "app/tours/page.js",
   "/page": "app/page.js",
-  "/transfers/page": "app/transfers/page.js",
-  "/who-we-are/page": "app/who-we-are/page.js",
-  "/tours/national-museum/page": "app/tours/national-museum/page.js",
-  "/tours/wadi-el-natrun/page": "app/tours/wadi-el-natrun/page.js"
+  "/book-tour/[slug]/page": "app/book-tour/[slug]/page.js",
+  "/success/page": "app/success/page.js"
 }

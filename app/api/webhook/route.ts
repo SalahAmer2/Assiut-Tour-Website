@@ -92,31 +92,56 @@ export async function POST(req: Request) {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
       },
+      tls: {
+        rejectUnauthorized: false,
+      },
     });
 
-    const htmlBody = `
-      <h2>Booking Confirmation</h2>
-      <p><b>Reference:</b> ${bookingRef}</p>
-      <p><b>Tour:</b> ${tour}</p>
-      <p><b>Full Name:</b> ${fullName}</p>
-      <p><b>Nationality:</b> ${nationality}</p>
-      <p><b>Passport:</b> ${passport}</p>
-      <p><b>Telephone:</b> ${telephone}</p>
-      <p><b>Arrival Date:</b> ${arrivalDate}</p>
-      <h2>Payment Details</h2>
-      <p><b>Amount Paid:</b> ${session.amount_total! / 100} ${session.currency.toUpperCase()}</p>
-      <p><b>Payment ID:</b> ${session.payment_intent}</p>
-    `;
-
-    const mailOptions = {
+    // --- Email to BUSINESS (full details) ---
+    const businessMail = {
       from: `"Tour Booking" <${process.env.EMAIL_USER}>`,
-      to: [process.env.NOTIFY_EMAIL, customerEmail], // send to you & customer
-      subject: `Booking Confirmation - ${tour} (${bookingRef})`,
-      html: htmlBody,
+      to: process.env.NOTIFY_EMAIL,
+      subject: `New Booking - ${tour} (${bookingRef})`,
+      html: `
+        <h2>New Booking Received</h2>
+        <p><b>Reference:</b> ${bookingRef}</p>
+        <p><b>Tour:</b> ${tour}</p>
+        <p><b>Full Name:</b> ${fullName}</p>
+        <p><b>Nationality:</b> ${nationality}</p>
+        <p><b>Passport Number:</b> ${passport}</p>
+        <p><b>Telephone:</b> ${telephone}</p>
+        <p><b>Arrival Date:</b> ${arrivalDate}</p>
+        <h2>Payment Details</h2>
+        <p><b>Amount Paid:</b> ${session.amount_total! / 100} ${session.currency.toUpperCase()}</p>
+        <p><b>Payment ID:</b> ${session.payment_intent}</p>
+      `,
     };
 
-    await transporter.sendMail(mailOptions);
+    // --- Email to CUSTOMER (clean confirmation) ---
+    const customerMail = {
+      from: `"Tour Booking" <${process.env.EMAIL_USER}>`,
+      to: customerEmail,
+      subject: `Booking Confirmation - ${tour} (${bookingRef})`,
+      html: `
+        <h2>Booking Confirmation</h2>
+        <p><b>Reference:</b> ${bookingRef}</p>
+        <p><b>Tour:</b> ${tour}</p>
+        <p><b>Full Name:</b> ${fullName}</p>
+        <p><b>Nationality:</b> ${nationality}</p>
+        <p><b>Arrival Date:</b> ${arrivalDate}</p>
+        <p><b>Telephone:</b> ${telephone}</p>
+        <h2>Payment</h2>
+        <p><b>Amount Paid:</b> ${session.amount_total! / 100} ${session.currency.toUpperCase()}</p>
+        <hr/>
+        <p>Thank you for booking with us! We look forward to welcoming you.</p>
+      `,
+    };
+
+    // Send both emails
+    await transporter.sendMail(businessMail);
+    await transporter.sendMail(customerMail);
   }
 
   return NextResponse.json({ received: true });
 }
+
