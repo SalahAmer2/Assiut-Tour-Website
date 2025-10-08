@@ -127,6 +127,8 @@ export async function POST(req: Request) {
 
     const bookingRef = `BOOK-${Date.now()}`;
 
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL?.replace(/\/$/, "");
+
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       line_items: [
@@ -142,8 +144,8 @@ export async function POST(req: Request) {
         },
       ],
       mode: "payment",
-      success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/success?ref=${bookingRef}`,
-      cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/cancel`,
+      success_url: `${baseUrl}/success?ref=${bookingRef}`,
+      cancel_url: `${baseUrl}/cancel`,
       metadata: {
         ...formData,
         tour,
