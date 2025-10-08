@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from "next/link";
 
 type EventCardProps = {
   title: string;
@@ -17,9 +18,11 @@ export default function EventCard({ title, description, date, image }: EventCard
         <h3 className="text-2xl font-semibold text-nile-blue mb-2">{title}</h3>
         <p className="text-sm text-gray-500 mb-2">{date}</p>
         <p className="text-gray-700 mb-4">{description}</p>
-        <button className="text-nile-blue font-semibold underline hover:text-blue-900 transition">
-          Learn More →
-        </button>
+        <Link href="/contact-us">
+          <button className="text-nile-blue font-semibold underline hover:text-blue-900 transition">
+            Learn More →
+          </button>
+        </Link>
       </div>
     </div>
   );
