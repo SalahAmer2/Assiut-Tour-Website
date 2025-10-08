@@ -52,7 +52,7 @@ export default function MuqattamPage() {
         <a 
         // href="/contact-us"
         href="/book-tour/al-muqattam" 
-        className="text-nile-blue underline font-semibold hover:text-blue-900">
+        className="inline-block text-yellow-600 font-semibold underline hover:text-yellow-700 transition duration-300">
           Book Tour →
         </a>
       </section>

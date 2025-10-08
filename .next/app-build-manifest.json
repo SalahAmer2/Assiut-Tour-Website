@@ -11,30 +11,30 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/tours/page": [
+    "/tours/muqattam/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/tours/page.js"
+      "static/chunks/app/tours/muqattam/page.js"
     ],
     "/book-tour/[slug]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/book-tour/[slug]/page.js"
     ],
-    "/api/create-checkout-session/route": [
+    "/tours/sayyidna-omar/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/api/create-checkout-session/route.js"
+      "static/chunks/app/tours/sayyidna-omar/page.js"
     ],
-    "/success/page": [
+    "/tours/national-museum/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/success/page.js"
+      "static/chunks/app/tours/national-museum/page.js"
     ],
-    "/api/webhook/route": [
+    "/tours/wadi-el-natrun/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/api/webhook/route.js"
+      "static/chunks/app/tours/wadi-el-natrun/page.js"
     ],
     "/_not-found/page": [
       "static/chunks/webpack.js",

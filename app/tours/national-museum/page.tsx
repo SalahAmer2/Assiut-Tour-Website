@@ -55,8 +55,8 @@ export default function NationalMuseumPage() {
         </p>
         <a
           // href="/contact-us"
-          href="book-tour/national-museum"
-          className="inline-block text-nile-blue font-semibold underline hover:text-blue-800 transition duration-300"
+          href="/book-tour/national-museum"
+          className="inline-block text-yellow-600 font-semibold underline hover:text-yellow-700 transition duration-300"
         >
           Book Tour →
         </a>

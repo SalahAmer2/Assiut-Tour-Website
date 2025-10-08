@@ -127,7 +127,7 @@ export async function POST(req: Request) {
 
     const bookingRef = `BOOK-${Date.now()}`;
 
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL?.replace(/\/$/, "");
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL?.replace(/\/$/, ""); // removes extra or duplicate slashes if there's one in the Url because success below also has a slash before it as you can see /success
 
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
