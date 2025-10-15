@@ -471,6 +471,7 @@ export async function POST(req: Request) {
           <p><b>Phone:</b> ${metadata.phone}</p>
           <hr/>
           <p><b>Amount Paid:</b> ${session.amount_total! / 100} ${session.currency.toUpperCase()}</p>
+          <p><b>Stripe Payment ID:</b> ${session.payment_intent}</p>
         `,
       };
 
@@ -508,6 +509,7 @@ export async function POST(req: Request) {
           <p><b>Arrival Date:</b> ${metadata.arrivalDate}</p>
           <hr/>
           <p><b>Amount Paid:</b> ${session.amount_total! / 100} ${session.currency.toUpperCase()}</p>
+          <p><b>Stripe Payment ID:</b> ${session.payment_intent}</p>
         `,
       };
 
