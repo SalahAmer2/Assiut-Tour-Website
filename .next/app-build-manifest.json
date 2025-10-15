@@ -11,35 +11,30 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/tours/muqattam/page": [
+    "/tours/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/tours/muqattam/page.js"
+      "static/chunks/app/tours/page.js"
     ],
     "/book-tour/[slug]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/book-tour/[slug]/page.js"
     ],
-    "/tours/sayyidna-omar/page": [
+    "/api/create-checkout-session/route": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/tours/sayyidna-omar/page.js"
+      "static/chunks/app/api/create-checkout-session/route.js"
     ],
-    "/tours/national-museum/page": [
+    "/api/webhook/route": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/tours/national-museum/page.js"
+      "static/chunks/app/api/webhook/route.js"
     ],
-    "/tours/wadi-el-natrun/page": [
+    "/success/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/tours/wadi-el-natrun/page.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/chunks/app/success/page.js"
     ]
   }
 }

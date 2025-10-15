@@ -26,6 +26,7 @@ export default function BookTour({ params }: { params: Promise<{ slug: string }>
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
+        type: "tour",
         tour: slug, // which tour they’re booking
         formData,
       }),

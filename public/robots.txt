@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://toursassiut.netlify.app
+
+# Sitemaps
+Sitemap: https://toursassiut.netlify.app/sitemap.xml
